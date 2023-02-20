@@ -1,0 +1,6 @@
+From  ubuntu
+MAINTAINER mahesh.11904325.lpu.in
+
+RUN apt-get update
+Run apt-get clean 
+CMD ["echo","Image created"]
