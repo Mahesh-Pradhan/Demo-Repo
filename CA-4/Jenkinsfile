@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git') {
+            steps {
+                git url: '', branch: 'main'
+            }
+        }
+    stage('Deploy'){
+           steps{
+               sh 'ansible-playbook EC2-instances.yml'
+           }
+        }  
+    }
+}
